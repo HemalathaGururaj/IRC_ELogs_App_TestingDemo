@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "953259090314",
+    "firebase_url": "https://sc64master.firebaseio.com",
+    "project_id": "sc64master",
+    "storage_bucket": "sc64master.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:953259090314:android:3ca003b8e9a54e50",
+        "android_client_info": {
+          "package_name": "com.shasratech.s_c_31"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "953259090314-7d7rl1tdulvru17cfv9n1428ih133flj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHYO-aVUS4wFO6oP_4ZtZHxIjNF1TARG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "953259090314-7d7rl1tdulvru17cfv9n1428ih133flj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

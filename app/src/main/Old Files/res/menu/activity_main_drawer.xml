@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+
+        <menu >
+            <item android:id="@+id/nav_App_Config" android:icon="@drawable/ic_menu_manage" android:title="App Configurations" />
+        </menu>
+
+
+        <group android:id="@+id/nav_Gid1" android:title="Reports" >
+
+            <!--item android:title="Transactions"  android:id="@+id/nav_trans_act" />
+            <item android:title="MoneyTrans"  android:id="@+id/nav_Money_Mgmt" />
+            <item android:title="Accounts"  android:id="@+id/nav_Accounts" />
+            <item android:title="Auto Save Trans"  android:id="@+id/nav_AutoSave" /-->
+        </group>
+
+
+        <group android:id="@+id/nav_Gid3" android:title="Configuration" >
+            <!--item android:title="Sales Company"  android:id="@+id/nav_SalesComp1" />
+            <item android:title="Material"  android:id="@+id/nav_Material" />
+            <item android:title="Person"  android:id="@+id/nav_Person" />
+            <item android:title="Site"  android:id="@+id/nav_Site" />
+            <item android:title="Customer Details"  android:id="@+id/nav_CustomerDetails" />
+            <item android:title="Transport"  android:id="@+id/nav_transport_act" />
+            <item android:title="Vehicle"  android:id="@+id/nav_Vehicle" />
+            <item android:title="RFID Insert"  android:id="@+id/nav_RFID_Insert" />
+            <item android:title="RFID Access"  android:id="@+id/nav_RFID_Access" />
+            <item android:title="Grant Access"  android:id="@+id/nav_Grant_Access" />
+            <item android:title="Alarms Checking"  android:id="@+id/nav_Alarms_Check" />
+            <item android:title="Expense Type"  android:id="@+id/nav_ExpenseType" /-->
+            <item android:title="App Users"  android:id="@+id/nav_appUsers" />
+            <item android:title="IRC_ELogs"  android:id="@+id/nav_IRC_ELogs" />
+            <item android:title="HomeShed"  android:id="@+id/nav_HomeShed" />
+            <item android:title="CategorizedProblem"  android:id="@+id/nav_CategorizedProblem" />
+            <item android:title="CategorizedSoultion"  android:id="@+id/nav_CategorizedSoultion" />
+            <item android:title="Location"  android:id="@+id/nav_Location" />
+            <item android:title="TrainDetails"  android:id="@+id/nav_TrainDetails" />
+            <item android:title="DriverDetails"  android:id="@+id/nav_DriverDetails" />
+            <item android:title="LocoDetails"  android:id="@+id/nav_LocoDetails" />
+
+        </group>
+
+
+        <!--group android:id="@+id/nav_Gid5" android:title="Others">
+            <group android:id="@+id/nav_Gid6">
+                <item android:title="Inventory"  android:id="@+id/nav_Inventory" />
+
+                <View android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider"/>
+
+            </group>
+        </group-->
+
+        <!--item android:title="KMBooking"  android:id="@+id/nav_KMBooking" /-->
+        <!--item android:title="Dialer"  android:id="@+id/nav_Dialer" /-->
+
+    </group>
+
+</menu>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        tools:context=".Vehicles_Modify_HSM">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="Transport"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+        <Switch
+            android:id="@+id/transport_Modify_newAddition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transport: Enable New Addition" />
+
+        <Switch
+            android:id="@+id/transport_Modify_Disabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Disabled" />
+
+        <EditText
+            android:id="@+id/Transport_NewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Transport Name"
+            android:inputType="none" />
+
+
+
+        <com.shasratech.s_c_31.MySpinner
+            android:id="@+id/transport_Modify_Name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:text="Customer"
+                android:layout_marginBottom="5dp"/>
+
+        </LinearLayout>
+
+
+        <com.shasratech.s_c_31.MySpinner
+            android:id="@+id/transport_Modify_Customer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Site"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+        <com.shasratech.s_c_31.MySpinner
+            android:id="@+id/transport_Modify_Site"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/transport_Modify_Rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Rate"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:numeric="signed|decimal" />
+
+        <EditText
+            android:id="@+id/transport_Modify_Addition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Addition"
+            android:inputType="number|numberSigned|numberDecimal"
+            android:numeric="signed|decimal" />
+
+        <Button
+            android:id="@+id/transport_Modify_PB_Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="Save" />
+
+    </LinearLayout>
+</ScrollView>

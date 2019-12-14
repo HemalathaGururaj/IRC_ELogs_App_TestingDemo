@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    tools:context="com.shasratech.s_c_31.Site_Modify_HSM">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:text="Site -Edit"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="Site Type"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <com.shasratech.s_c_31.MySpinner
+        android:id="@+id/siteType"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_bright" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="Site Owner"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <com.shasratech.s_c_31.MySpinner
+        android:id="@+id/CB_siteOwner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_bright" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Site Name"
+            android:textColor="#000000"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/newAddition_Site"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="Site: Enable New Addition  " />
+
+    <EditText
+        android:id="@+id/siteNameET"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_dark"
+        android:ems="10"
+        android:hint="Site Name" />
+
+    <com.shasratech.s_c_31.MySpinner
+        android:id="@+id/siteName"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_bright" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:text="Material"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <com.shasratech.s_c_31.MySpinner
+        android:id="@+id/Site_Modify_Material"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_blue_bright" />
+
+
+    <EditText
+        android:id="@+id/Site_Modify_Distance"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Distance"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Site_Modify_Rate_Local"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Tonage Rate [Local]"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Site_Modify_Rate_Remote"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Tonage Rate [Remote]"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Site_Modify_CFT_Rate"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="CFT Rate"
+        android:inputType="number|numberDecimal" />
+
+    <EditText
+        android:id="@+id/Site_Modify_Extra_KG"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
+        android:background="@android:color/holo_orange_light"
+        android:ems="10"
+        android:hint="Extra"
+        android:inputType="number" />
+
+
+    <Switch
+        android:id="@+id/Site_Modify_disabled"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="Disabled" />
+
+    <Switch
+        android:id="@+id/GST_Included"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@color/colorAccent"
+        android:text="Rate includes GST" />
+
+    <Button
+        android:id="@+id/Site_Modify_Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Save"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textSize="18sp" />
+</LinearLayout>
+</ScrollView>

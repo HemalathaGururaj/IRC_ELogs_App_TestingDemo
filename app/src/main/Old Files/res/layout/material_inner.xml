@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/Material__L_id"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxLines="1"
+        android:minWidth="60sp"
+        android:maxWidth="60sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+
+    <TextView
+        android:id="@+id/Material_Name"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="220sp"
+        android:maxLines="1"
+        android:minWidth="220sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/Material__price"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Material__units"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="300sp"
+        android:maxLines="1"
+        android:minWidth="300sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Material__CFT_Rate"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/Material__Disabled"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/Material__Create_TS"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Material__Modify_TS"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Material__User"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/Material__OtherDetails"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/Material__CFTs_Per_Ton"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+</LinearLayout>

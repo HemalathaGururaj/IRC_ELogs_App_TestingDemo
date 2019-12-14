@@ -1,0 +1,255 @@
+package com.shasratech.s_c_31;
+
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.Context;
+import android.database.Cursor;
+import android.graphics.Color;
+import android.os.Bundle;
+import android.os.Handler;
+import android.support.v4.widget.SimpleCursorAdapter;
+import android.support.v7.app.AlertDialog;
+import android.util.Log;
+import android.view.View;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.Button;
+import android.widget.GridView;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+
+import static com.shasratech.s_c_31.Globals.*;
+import static com.shasratech.s_c_31.DBHelperUserData.*;
+
+
+public class Person extends AppCompatActivity {
+
+    Context mycontext = this;
+    private String TAG = "Person";
+   // private Table_Data_Refresh_TimeHandler Table_Refresh_TH = null;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.person_activity);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        Populate_Items_into_Table();
+      //  Table_Refresh_TH = new Table_Data_Refresh_TimeHandler();
+    }
+
+    @Override
+    public  void onResume () {
+        super.onResume();
+        Populate_Items_into_Table();
+       // Table_Refresh_TH.Resume_Timer();
+    }
+
+    @Override
+    public void onBackPressed() {
+       // Table_Refresh_TH.Stop_Timer();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.person, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void on_Home_PB_Click(View view) {
+        Intent inent = new Intent(this, MainActivity.class);
+        startActivity(inent);
+    }
+
+    public void on_Refresh_PB_Click(View view) {
+        Populate_Items_into_Table();
+      //  Person_DataUpdated = false;
+    }
+
+    public void on_Select_PB_Click(View view) {
+        ErrMsgDialog("Noting to Select or This feature is not Implemented");
+        //Intent Person_Modify = new Intent(this, Person_Modify.class);
+        //startActivity(Person_Modify);
+    }
+
+    public void on_Modify_PB_Click(View view) {
+        Intent Person_Modify = new Intent(this, Person_Modify.class);
+        startActivity(Person_Modify);
+    }
+
+    public void on_DownLoad_PB_Click(View view) {
+        DownLoad_Complete_Table_from_Cloud_Act_Person = true;
+    }
+
+    public void on_Delete_Data_PB_Click(View view) {
+        final String Table = "Person";
+        // Need to Add Code to Download the data present in the Cloud
+
+        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which){
+                    case DialogInterface.BUTTON_POSITIVE:
+                        myDB_G.db_Handle_G_UD.execSQL("DELETE FROM " + Table + ";");
+                        ErrMsgDialog("Cleanin "+ Table + " table Complete.\n");
+                        Populate_Items_into_Table();
+                        break;
+
+                    case DialogInterface.BUTTON_NEGATIVE:
+                        //No button clicked
+                        break;
+                }
+            }
+        };
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to Delete data from table \"" + Table + "\" in Current Mobile?").setPositiveButton("Yes", dialogClickListener)
+                .setNegativeButton("No", dialogClickListener).show();
+    }
+
+    public void on_Delete_Table_PB_Click(View view) {
+        // Need to Add Code to Download the data present in the Cloud
+        final String Table = "Person";
+
+        DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                switch (which){
+                    case DialogInterface.BUTTON_POSITIVE:
+                        myDB_G.db_Handle_G_UD.execSQL("DROP TABLE IF EXISTS " + Table + ";");
+                        System.exit(0);
+                    break;
+
+                    case DialogInterface.BUTTON_NEGATIVE:
+                        //No button clicked
+                        break;
+                }
+            }
+        };
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to Delete \"\" + Table + \"\" Table in Current Mobile\n\nYou will need to restart the Application after this.?").setPositiveButton("Yes", dialogClickListener)
+                .setNegativeButton("No", dialogClickListener).show();
+    }
+
+
+    public void Populate_Items_into_Table () {
+
+        //if (!FB_IMEI_Setup && FB_IMEI_Max_Attempt_Failed) {  return; }
+        String Table = "Person";
+
+        Log.i (TAG, "167 1234567890 myDB_G.Get_DB_Name = " + myDB_G.Get_DB_Name());
+        Cursor OutputC = myDB_G.ReadData_from_DB_Table(Table, "_id, Person_Type, Name, Address, PhoneNum, Print_Display_Name, GSTNum, SellerComp, Disabled, Create_TS, Modify_TS, User", "", "", "Name");
+
+        Log.i (TAG, "1234567890 Person myDB_G=" + myDB_G + ", FBAppCustomer=" + FBAppCustomer + ", OutputC = " + OutputC);
+        Log.i(TAG, "myDB_G.Get_Val_from_DB_UD =" + myDB_G.Get_Val_from_DB_UD(Table));
+        if ((OutputC != null) || (true)) {
+            String[] fromFieldNames1 = {"_id", "Person_Type", "Name", "Address", "PhoneNum", "Print_Display_Name", "GSTNum", "SellerComp", "Disabled", "Create_TS", "Modify_TS", "User"};
+
+            Log.i (TAG, "Populate_Items_into_Table 185 ");
+
+            ArrayList<HashMap<String, String>> val1 = new ArrayList<HashMap<String, String>>();
+            HashMap<String, String> val = new HashMap<String, String>();
+            int a1 = 0;
+            int a2 = fromFieldNames1.length;
+            for (; a1 < a2; a1++) {
+                val.put(fromFieldNames1[a1], fromFieldNames1[a1]);
+            }
+            val1.add(val);
+
+            int[] ToViewIDs = new int[]{R.id.Person__L_id, R.id.Person_Person_Type,
+                    R.id.Person_Name, R.id.Person_Address, R.id.Person_PhoneNum,  R.id.Person_Print_Display_Name,  R.id.Person_GSTNum
+                    , R.id.Person_SellerComp,  R.id.Person_Disabled,  R.id.Person_Create_TS,  R.id.Person_Modify_TS, R.id.Person_User };
+
+            SimpleAdapter k1 = new SimpleAdapter(getBaseContext(), val1, R.layout.person_inner, fromFieldNames1, ToViewIDs);
+
+            ListView myMaterial_Items1 = (ListView) findViewById(R.id.Material_Header);
+            myMaterial_Items1.setAdapter(k1);
+
+            SimpleCursorAdapter myCursorAdapter;
+            myCursorAdapter = new SimpleCursorAdapter(getBaseContext(), R.layout.person_inner, OutputC, fromFieldNames1, ToViewIDs, 0);
+
+            GridView myMaterial_Items = (GridView) findViewById(R.id.Material_Items_List);
+            myMaterial_Items.setAdapter(myCursorAdapter);
+
+        } else {
+
+        }
+
+    }
+
+
+    
+  /*  private class Table_Data_Refresh_TimeHandler  {
+        // Create the Handler object (on the main thread by default)
+        private Handler handler = new Handler();
+        private static  final String TAG = "Table_Data_Refresh_TimeHandler";
+        private boolean Toggle = true;
+
+        // Define the code block to be executed
+
+        Table_Data_Refresh_TimeHandler() {
+            handler.post(runnableCode);
+        }
+
+        private Runnable runnableCode = new Runnable() {
+            @Override
+            public void run() {
+                // Do something here on the main thread
+                Button a = (Button) findViewById(R.id.Material_Refresh_PB);
+                if (Person_DataUpdated) {
+                    if (Toggle == false) {
+                        a.setBackgroundColor(Color.RED);
+                        Toggle = true;
+                    } else {
+                        a.setBackgroundColor(Color.GRAY);
+                        Toggle = false;
+                    }
+
+                } else {
+                    a.setBackgroundColor(Color.GREEN);
+                }
+                handler.postDelayed(this, 1000);
+            }
+        };
+
+        public void Stop_Timer () {
+            handler.postDelayed(runnableCode, 1000* 60 * 60 * 24);
+        }
+
+        public void Resume_Timer () {
+            handler.postDelayed(runnableCode, 1000);
+        }
+    } */
+}

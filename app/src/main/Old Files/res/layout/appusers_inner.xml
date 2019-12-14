@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/AppUsers_L_id"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxLines="1"
+        android:minWidth="60sp"
+        android:maxWidth="60sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/AppUsers_Name"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/AppUsers_Group"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/AppUsers_Disabled"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/AppUsers_TimeStamp"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

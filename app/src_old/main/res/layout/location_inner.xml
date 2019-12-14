@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/location_L_id"
+        android:layout_width="60sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxLines="1"
+        android:minWidth="60sp"
+        android:maxWidth="60sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+
+    <TextView
+        android:id="@+id/location_Location"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="220sp"
+        android:maxLines="1"
+        android:minWidth="220sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/location_Active"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:gravity="end"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/location_Zone"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:gravity="end"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+
+    <TextView
+        android:id="@+id/location_Create_TS"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/location_Modify_TS"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/location_User"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+</LinearLayout>

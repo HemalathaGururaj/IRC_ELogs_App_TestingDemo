@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contents_Location_Modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Location_Modify"
+    tools:showIn="@layout/app_bar_location_modify"
+    android:background="@android:color/white"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.08"
+        android:paddingTop="10sp">
+
+
+        <LinearLayout
+            android:id="@+id/LM_Linear_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <Switch
+                android:id="@+id/Location_Add_New"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.3"
+                android:text="Add New"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <LinearLayout
+                android:id="@+id/LM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Location"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Location_TE"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="number|text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/Location_Modify_Location"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="App_Name"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+
+            <LinearLayout
+                android:id="@+id/LM_Linear_Layout45"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Zone"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Location_Modify_Zone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/Location_Modify_Active"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_weight="0.3"
+                android:text="Active"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+
+
+
+            <Button
+                android:id="@+id/Location_Modify_Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:layout_weight="0.3"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="OnLocation_Modify_Save_Clicked"
+                android:text="Save"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

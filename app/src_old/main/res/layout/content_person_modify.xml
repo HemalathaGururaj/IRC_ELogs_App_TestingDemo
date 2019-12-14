@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Content_Person_Modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Person_Modify"
+    tools:showIn="@layout/app_bar_person_modify"
+    android:background="@android:color/holo_orange_dark"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.08"
+        android:paddingTop="10sp">
+
+
+        <LinearLayout
+            android:id="@+id/MM_Linear_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/Person_Modify_Type"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="Peson_Type"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Switch
+                android:id="@+id/Person_Modify_Add_New"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:text="Add New"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <LinearLayout
+                android:id="@+id/PM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/P_textView3"
+                    android:layout_width="75sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Person"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Person_Name_TE"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/Person_Modify_Name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="Person_Name"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Switch
+                android:id="@+id/Person_Modify_Disabled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:padding="10sp"
+                android:text="Disabled"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Address"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Person_Modify_Adderss"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="Address"
+                    android:inputType="text|textImeMultiLine"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1PN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Phone Number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/Person_Modify_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1PDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Print Display Name"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/Person_Modify_Print_Disp_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="Print Display Name"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1GST"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="GSTNum"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/Person_Modify_GST"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="GST Number"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1SC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Seller Company"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <com.shasratech.s_c_31.MySpinner
+                    android:id="@+id/Person_Modify_SellerComp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.08"
+                    android:background="#79FFB8"
+                    android:fontFamily="sans-serif-condensed"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="Seller Comp"
+                    android:inputType="none"
+                    android:padding="5dp"
+                    android:shadowColor="@color/colorAccent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="26dp" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/Person_Modify_Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="OnPerson_Modify_Save_Clicked"
+                android:text="Save"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

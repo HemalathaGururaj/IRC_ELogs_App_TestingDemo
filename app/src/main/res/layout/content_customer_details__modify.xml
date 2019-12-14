@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contents_Customer_Details_Modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CustomerDetails_Modify"
+    tools:showIn="@layout/app_bar_customer_details_modify"
+    android:background="@android:color/holo_orange_dark"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Details Soft Crusher"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:padding="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Customer"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <com.shasratech.s_c_31.MySpinner
+                    android:id="@+id/customer"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.08"
+                    android:background="#79FFB8"
+                    android:fontFamily="sans-serif-condensed"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="App_Name"
+                    android:inputType="none"
+                    android:padding="5dp"
+                    android:shadowColor="@color/colorAccent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="26dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1PO"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="PO Number"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/poNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="PO Number"
+                    android:inputType="text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1CL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Credit Limit"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/creditLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="Credit Limit"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Credit Alarm Trigger"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/creditLimitAlarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="Credit Limit Alarm"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:text="Seller Company"
+                    android:layout_marginBottom="5dp"/>
+
+
+
+
+                <com.shasratech.s_c_31.MySpinner
+                    android:id="@+id/sellerCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.08"
+                    android:background="#79FFB8"
+                    android:fontFamily="sans-serif-condensed"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:hint="App_Name"
+                    android:inputType="none"
+                    android:padding="5dp"
+                    android:shadowColor="@color/colorAccent"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="26dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="Permit Percent"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/permitPct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="Permit Pct"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/MM_Linear_Layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:text="SGST Percent"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/sgstPct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:hint="SGST Pct"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MM_Linear_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="CGST Percent"
+                android:textAlignment="viewStart"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/cgstPct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@android:color/holo_blue_bright"
+                android:ems="10"
+                android:hint="CGST Pct"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MM_Linear_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="IS-GST Percent"
+                android:textAlignment="viewStart"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/isgstPct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@android:color/holo_blue_bright"
+                android:ems="10"
+                android:hint="IS-GST Pct"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MM_Linear_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Number of Prints"
+                android:textAlignment="viewStart"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/numPrints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:background="@android:color/holo_blue_bright"
+                android:ems="10"
+                android:hint="Num Prints"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/MM_Linear_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:text="Tax Invoice Remarks"
+                android:textAlignment="viewStart"
+                android:textColor="@color/design_default_color_primary_dark"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/taxInvoiceRemarks"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5sp"
+                android:background="@android:color/holo_blue_bright"
+                android:ems="10"
+                android:hint="Tax-Invoice Remarks"
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/tpPrintCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TP Print Cash" />
+
+            <CheckBox
+                android:id="@+id/tpPrintCompanyDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TP Print Company Details" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@android:color/holo_green_dark"
+                android:text="Save"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

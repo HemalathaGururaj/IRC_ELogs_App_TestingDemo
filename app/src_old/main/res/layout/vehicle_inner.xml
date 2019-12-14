@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <!--_id,ID_Number,TareWeight,Type, Customer,Transport, CFT,OtherDetails,Disabled,Create_TS,Modify_TS,User,FC_Date,Insurance_Date,RoadTax_Date -->
+
+    <TextView
+        android:id="@+id/Vehicle_L_id"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxLines="1"
+        android:minWidth="60sp"
+        android:maxWidth="60sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_ID_Number"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="300sp"
+        android:maxLines="1"
+        android:minWidth="300sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_TareWeight"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_Type"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_Customer"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_Transport"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_CFT"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_OtherDetails"
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_Disabled"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/Vehicle_Create_TS"
+        android:layout_weight="1"
+        android:foregroundGravity="center"
+        android:textSize="18sp"
+
+        android:layout_margin="3dip"
+        android:background="#9C27B0"
+        android:textColor="#FFFFFF"
+        android:padding="2dp"
+        android:ellipsize="middle"
+        android:minWidth = "100sp"
+        android:maxWidth="100sp"
+        android:textAlignment="textEnd"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/Vehicle_Modify_TS"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="220sp"
+        android:maxLines="1"
+        android:minWidth="220sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_User"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_FC_Date"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_Insurance_Date"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/Vehicle_RoadTax_Date"
+        android:layout_width="220sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+</LinearLayout>

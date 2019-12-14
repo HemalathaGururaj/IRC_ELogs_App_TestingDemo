@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_trans_items"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".IRC_ELogs"
+    tools:showIn="@layout/app_bar_irc_elogs"
+    android:background="@android:color/holo_orange_dark"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/Rep_Item_L_Image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_margin="5dip"
+            android:layout_weight=".1"
+            app:srcCompat="@color/colorAccent" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/IRC_ELogs_Header"
+                    android:layout_width="match_parent"
+                    android:layout_height="40sp"
+                    android:layout_margin="5dp"
+                    android:background="@android:color/holo_blue_bright"
+                    android:padding="2dp"></ListView>
+
+                <!--ListView
+                    android:id="@+id/Material_Items_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".1"
+                    android:background="#00E676"
+                    android:padding="2dp"-->
+
+                <GridView
+                    android:id="@+id/IRC_ELogs_Items_List"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight=".1"
+                    android:background="#00E676"
+
+                    android:padding="2dp">
+
+                </GridView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+    </LinearLayout>
+</FrameLayout>

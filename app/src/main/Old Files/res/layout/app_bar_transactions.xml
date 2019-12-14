@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Transactions">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+                <Button
+                    android:id="@+id/Transactions_Home_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/home_icon"
+                    android:onClick="on_Transactions_Home_PB_Click" />
+
+                <Button
+                    android:id="@+id/Transactions_Refresh_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/refresh_icon"
+                    android:onClick="on_Transactions_refresh_PB_Click" />
+
+                <Button
+                    android:id="@+id/Transactions_Select_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/database_search"
+                    android:onClick="on_Transactions_Select_PB_Click" />
+
+                <Button
+                    android:id="@+id/Transactions_Modify_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/text_edit_icon"
+                    android:onClick="on_Transactions_Modify_PB_Click" />
+
+                <Button
+                    android:id="@+id/Transactions_DownLoad_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/download"
+                    android:onClick="on_DownLoad_PB_Click" />
+
+                <Button
+                    android:id="@+id/Transactions_Delete_Data_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/table_row_delete_512"
+                    android:onClick="on_Delete_Data_PB_Click" />
+
+                <Button
+                    android:id="@+id/Transactions_Delete_Table_PB"
+                    android:layout_width="40dip"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="10sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_light"
+                    android:foreground="@drawable/table_delete"
+                    android:onClick="on_Delete_Table_PB_Click" />
+
+            </android.support.v7.widget.Toolbar>
+        </HorizontalScrollView>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_transactions" />
+
+</android.support.design.widget.CoordinatorLayout>

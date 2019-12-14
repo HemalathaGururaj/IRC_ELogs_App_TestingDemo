@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contents_categorizedsolution_Modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CategorizedSoultion_Modify"
+    tools:showIn="@layout/app_bar_categorizedsolution_modify"
+    android:background="@android:color/holo_orange_dark"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.08"
+        android:paddingTop="10sp">
+
+
+        <LinearLayout
+            android:id="@+id/CP_Linear_Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/CP_Linear_Layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="75sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Solution ID"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/CategorizedSolution_SI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/CategorizedSolution_Add_New"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Add New"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <LinearLayout
+                android:id="@+id/CP_Linear_Layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="75sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Problem ID"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/CategorizedSolution_PI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/CategorizedSolution_Modify_PI"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="App_Name"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+
+            <LinearLayout
+                android:id="@+id/CP_Linear_Layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Trip_No"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/CategorizedSolution_Modify_TripNo"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="App_Name"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <LinearLayout
+                android:id="@+id/CP_Linear_Layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Driver Name"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/CategorizedSolution_Modify_Driver_Name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="App_Name"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <Switch
+                android:id="@+id/CategorizedProblem_Add_New1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:text="Add New"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="111dp" />
+
+            <LinearLayout
+                android:id="@+id/CP_Linear_Layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="168dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Solution_Category"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/CategorizedSolution_Modify_SolutionCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/CategorizedSolution_Modify_Solution_Category"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:hint="App_Name"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+            <LinearLayout
+                android:id="@+id/CP_Linear_Layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Solution_Decription"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/CategorizedSolution_Modify_SolutionDecription"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/CategorizedProblem_Modify_Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="OnCategorizedSolution_Modify_Save_Clicked"
+                android:text="Save"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    android:gravity="bottom"
+    android:paddingBottom="1dip"
+    android:paddingLeft="1dip"
+    android:paddingRight="1dip" android:paddingTop="1dip"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:orientation="vertical"
+    android:layout_height="@dimen/nav_header_height"
+    android:layout_marginTop="25dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/NavBarProfileImage"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:srcCompat="@color/colorPrimary"
+            android:foreground="@drawable/my_profile_image1"
+            android:layout_gravity="top"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_margin="0dp"
+            android:layout_height="110dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip" android:text="@string/NavBarUserName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:fontFamily="cursive"
+            android:textStyle="normal|bold|italic"
+            android:textColor="@android:color/holo_red_dark"
+            android:id="@+id/NarBarUserName"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <TextView android:id="@+id/NavBar_EmailID" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/NavBarUserEmail"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:textStyle="normal|bold|italic"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:gravity="center" />
+
+
+</LinearLayout>

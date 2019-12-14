@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contents_HomeShed_Modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Monitor_Modify"
+    tools:showIn="@layout/app_bar_monitor_modify"
+    android:background="@android:color/holo_orange_dark"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.08"
+        android:paddingTop="10sp">
+
+
+        <LinearLayout
+            android:id="@+id/MT_Linear_Layou1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:id="@+id/Monitor_Add_New"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:text="Add New"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="111dp" />
+
+                <!--CheckBox
+                    android:id="@+id/HomeShed_Modify_Active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10sp"
+                    android:padding="10sp"
+                    android:text="Active"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="111dp" /-->
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Trip_No"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Trip_No"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <com.shasratech.s_c_31.MySpinner
+                android:id="@+id/Monitor_Modify_Trip_No"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5sp"
+                android:layout_weight="0.08"
+                android:background="#79FFB8"
+                android:fontFamily="sans-serif-condensed"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:inputType="none"
+                android:padding="5dp"
+                android:shadowColor="@color/colorAccent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"
+                tools:layout_editor_absoluteX="153dp"
+                tools:layout_editor_absoluteY="26dp" />
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Time"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Modify_Monitor_Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp"
+                    android:inputType="time"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="KM"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Modify_KM"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Monitor_Breaking"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Modify_Monitor_Breaking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Notch"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Modify_Notch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Load_Meter_Reading"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Modify_Load_Meter_Reading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/MT_Linear_Layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:padding="2sp"
+                    android:text="Battery_Ammeter_Reading"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/Monitor_Modify_Battery_Ammeter_Reading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5sp"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="text"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/Material_Modify_Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="OnMonitor_Modify_Save_Clicked"
+                android:text="Save"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

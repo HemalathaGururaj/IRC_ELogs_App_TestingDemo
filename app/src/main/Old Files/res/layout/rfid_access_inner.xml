@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/RFID_Access__L_id"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxLines="1"
+        android:minWidth="60sp"
+        android:maxWidth="60sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/RFID_Access_Time"
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="220sp"
+        android:maxLines="1"
+        android:minWidth="220sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/RFID_Access_id"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="250sp"
+        android:maxLines="1"
+        android:minWidth="250sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/RFID_Access_RFID_ID"
+        android:layout_width="120sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="300sp"
+        android:maxLines="1"
+        android:minWidth="300sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/RFID_Access_Vehicle"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+    <TextView
+        android:id="@+id/RFID_Access_Load"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dip"
+        android:layout_weight="1"
+        android:background="#9C27B0"
+        android:ellipsize="end"
+        android:foregroundGravity="center"
+        android:maxWidth="100sp"
+        android:maxLines="1"
+        android:minWidth="100sp"
+        android:padding="2dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="end" />
+
+</LinearLayout>

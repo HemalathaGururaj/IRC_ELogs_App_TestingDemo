@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inventory">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <Button
+                android:id="@+id/Rep_Home_PB"
+                android:layout_weight="1"
+                android:foreground="@drawable/home_icon"
+                android:background="@android:color/holo_green_light"
+                android:onClick="on_Rep_Home_PB_Click"
+                android:layout_width="40dip"
+                android:layout_height="40dip" />
+
+            <Button
+                android:id="@+id/Rep_Refresh_PB"
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="30sp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_green_light"
+                android:foreground="@drawable/refresh_icon"
+                android:onClick="on_Rep_refresh_PB_Click" />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_inventory" />
+
+</android.support.design.widget.CoordinatorLayout>

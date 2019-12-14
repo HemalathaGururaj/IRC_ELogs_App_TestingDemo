@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:fitsSystemWindows="true"
+    tools:context="com.shasratech.s_c_31.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+            <!--HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"-->
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Location"
+                        android:textColor="#FFF"
+                        android:textSize="22dp"
+                        android:textStyle="bold|italic" />
+
+                    <com.shasratech.s_c_31.MySpinner
+                        android:id="@+id/CB_Main_LocationChooser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5sp"
+                        android:layout_weight=".3"
+                        android:background="#11F"
+                        android:fontFamily="sans-serif-condensed"
+                        android:foregroundGravity="center"
+                        android:gravity="center"
+                        android:hint="Crusher Location"
+                        android:inputType="none"
+                        android:padding="5dp"
+                        android:shadowColor="#FF00FF"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="#0000FF"
+                        android:textColorHint="#0000FF"
+                        android:textSize="124sp"
+                        android:textStyle="normal|bold"
+                        tools:layout_editor_absoluteX="153dp"
+                        tools:layout_editor_absoluteY="26dp" />
+
+                    <!--RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Daily"
+                            android:checked="true"/>
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Monthly"/>
+
+                        <android.support.v7.widget.AppCompatRadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="Yearly"/>
+
+                    </RadioGroup-->
+                <!--/LinearLayout>
+            </HorizontalScrollView-->
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</android.support.design.widget.CoordinatorLayout>

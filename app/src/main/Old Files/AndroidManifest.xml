@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shasratech.s_c_31">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" /-->
+
+    <!--
+    uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BIND_PRINT_SERVICE" /
+    -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login"></activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Transactions"
+            android:label="@string/title_activity_transactions"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Configuration"
+            android:label="@string/title_activity_configuration"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MoneyTransaction"
+            android:label="@string/title_activity_money_trans"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Custom_Rate"
+            android:label="@string/title_activity_custom__rate"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inventory"
+            android:label="@string/title_activity_inventory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Person"
+            android:label="@string/title_activity_person"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Material"
+            android:label="@string/title_activity_material"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".IRC_ELogs" android:label="IRC_ELogs" android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".IRC_ELogs_Modify" android:label="ELogs Modify" android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeShed"
+            android:label="HomeShed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CategorizedProblem"
+            android:label="CategorizedProblem"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CategorizedSolution"
+            android:label="CategorizedSoultion"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Location"
+            android:label="Location"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DriverDetails"
+            android:label="DriverDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DriverDetails_Modify"
+            android:label="DriverDetails modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LocoDetails"
+            android:label="LocoDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LocoDetails_Modify"
+            android:label="LocoDetails modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Location_Modify"
+            android:label="Location modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeShed_Modify"
+            android:label="HomeShed modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TrainDetails"
+            android:label="TrainDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TrainDetails_Modify"
+            android:label="TrainDetails Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Vehicle"
+            android:label="@string/title_activity_vehicle"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".AutoSaveTrans"
+            android:label="@string/title_activity_auto_save_trans"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity
+            android:name=".Account"
+            android:label="@string/title_activity_account"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dialer"
+            android:label="@string/title_activity_dialer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Material_Modify"
+            android:label="IRC ELogs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Person_Modify"
+            android:label="Person Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Vehicle_Modify"
+            android:label="Vehicle Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Trasnport_Modify"
+            android:label="Transport Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Transactions_Modify"
+            android:label="Transactions Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MoneyTransaction_Modify"
+            android:label="Money Trans Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Trans_Seletion"
+            android:label="Trans Selection"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AlarmSoftCrusher" />
+        <activity
+            android:name=".AppUsers"
+            android:label="AppUsers"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".AppUsers_Modify"
+            android:label="AppUsers Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CashBank_Modify"
+            android:label="Cash/Bank Entry"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerDetails"
+            android:label="CustomerDetails"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CustomerDetails_Modify"
+            android:label="CustomerDetails Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Inventory_Modify"
+            android:label="Inventory Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OpenningBal_Modify"
+            android:label="Opening Balance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SellerComp_Modify"
+            android:label="Sales Comp Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Site_Modify_HSM"
+            android:label="Site Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Transport_Modify_HSM"
+            android:label="Transport Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Vehicles_Modify_HSM"
+            android:label="Vehicle Modify"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SellerComp"
+            android:label="Sales Company"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RFID_Access"
+            android:label="RFID Access"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RFID_Insert"
+            android:label="RFID Insert"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Grant_Access"
+            android:label="Grant Access"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="com.google.android.gms.measurement.UPLOAD" />
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

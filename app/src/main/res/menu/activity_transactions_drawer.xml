@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Trans_Drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/FB_SignIn"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="FB Sign In" />
+        <item
+            android:id="@+id/FB_SignOut"
+            android:icon="@android:drawable/ic_delete"
+            android:title="FB_SignOut" />
+        <item
+            android:id="@+id/FB_EmailVerifyAgain"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="FB_EmailVerifyAgain" />
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Table_Delete_Customer_Data"
+            android:icon="@android:drawable/ic_input_add"
+            android:title="Delete Customer Data" />
+
+    </group>
+
+</menu>

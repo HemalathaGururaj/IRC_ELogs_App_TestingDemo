@@ -1,0 +1,1706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Contents_Material_Modify"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".IRC_ELogs_Modify"
+    tools:showIn="@layout/app_bar_irc_elogs_modify"
+    android:background="@android:color/white"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.08"
+        android:paddingTop="10sp">
+
+
+        <LinearLayout
+            android:id="@+id/MM_Linear_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="South Western Railway"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="EMD DIESEL-SHED. HUBLI"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="ENGINE REPAIR BOOK FOR WDG-4 AND WDP-4"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Date"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Date"
+                    android:layout_width="467dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:paddingLeft="1dp"
+                android:paddingTop="5dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="1dp"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dark">
+
+
+            </ImageView>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="CrewDetails"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_CrewDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView26115"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Asst DriverName"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Asst_DriverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="DriverName"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_DriverName"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView26115"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Asst DriverDesig"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Asst_DriverDesig"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="DriverDesig"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_DriverDesig"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView26115"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Ticket Num"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Ticket_Num"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Ticket Num"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Ticket_Num2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="HomeShed"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_HomeShed1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="610dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="HomeShed"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_HomeShed2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="TripDetails"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_TripDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="From"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Start_P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="To"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_End_P"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="TrainNum"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_TrainNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Kilo Meters"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_KM"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Load"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Load"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Arrival"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Arrival"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="598dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Departure"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Departure"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="LocoDetails"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_LocoDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Last_Sch_Attdnd"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Asst_Last_Sch_Attdnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="LocoNum"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_LocoNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Attended At"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Attended_At"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="618dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Last Sch. Attended"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Last_Sch_Attended"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="583dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Next Sch On"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Next_Sch_On"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="610dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Levels"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Levels"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Lube_Consmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Fuel oil"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Initial"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Fuel_Init"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Final"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Fuel_Final"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Consumption"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Fuel_Consmp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Lube oil"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Initial"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Lube_Init"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Final"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Lube_Final"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Consumption"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Compressor Oil"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_CompressOil"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="GovernorOil"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_GovernorOil"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="604dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Collant water"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Cool_Wtr"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/black"
+                android:paddingLeft="1dp"
+                android:paddingTop="5dp"
+                android:paddingRight="1dp"
+                android:paddingBottom="1dp"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/divider_horizontal_dark">
+
+
+            </ImageView>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+                    <Button
+                        android:id="@+id/IRC_ELogs_Modify_Problems"
+                        android:layout_width="553dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:background="@android:color/holo_orange_light"
+                        android:onClick="OnIRC_ELogs_Modify_Add_Problem_Clicked"
+                        android:text="Insert Noted Preoblems"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <include layout="@layout/content_problems" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".5"
+                    android:orientation="vertical" >
+                    <Button
+                        android:id="@+id/IRC_ELogs_Modify_Solution"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10sp"
+                        android:background="@android:color/holo_orange_light"
+                        android:onClick="OnIRC_ELogs_Modify_Add_Solutions_Clicked"
+                        android:text="Add Solution Provided"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <include layout="@layout/content_solutions" />
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="604dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="I Items to be checked for handling over/taking over:"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2245"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_StartFuse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Start Fuse" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_MUCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MU Cable" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_GR_Seal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="GR Seal ok" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2245"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_FireExting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fire Extinguisher" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_SPeedoM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Speedometer Working" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_DB_Seal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DB Seal ok" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2245"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_FuelFill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Fire Extinguisher" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_HI_Flash"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HI and Flashers working" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_Wiper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wipers Working" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2245"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_AlertWork"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Alerter working" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_LVC_Locks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="HVC Locks" />
+
+                <CheckBox
+                    android:id="@+id/IRC_ELogs_Modify_Sanders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sanders Working" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Signature of driver taking over"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Sig_Drv1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Signature of driver taking over"
+                    android:textAlignment="center"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Sig_Drv2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Name"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_DrvName1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Name"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_DrvName2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/IRC_Linear_Layout2145"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Ticket No"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Ticket_P2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Shed"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Shed_P2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Ticket No"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Ticket_P2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+
+                <TextView
+                    android:id="@+id/textView61145"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:padding="2sp"
+                    android:text="Shed"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/design_default_color_primary_dark"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/IRC_ELogs_Modify_Shed_P2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5sp"
+                    android:layout_weight="0.3"
+                    android:autofillHints=""
+                    android:background="@android:color/holo_blue_bright"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    tools:layout_editor_absoluteX="153dp"
+                    tools:layout_editor_absoluteY="65dp" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/IRC_ELogs_Modify_Monitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="OnIRC_ELogs_Modify_Add_Monitor_Clicked"
+                android:text="Insert Monitor Observations"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+            <include layout="@layout/content_monitor" />
+            <Button
+                android:id="@+id/IRC_ELogs_Modify_Save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:background="@android:color/holo_orange_light"
+                android:onClick="OnIRC_ELogs_Modify_Save_Clicked"
+                android:text="Save"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="28dp"
+                tools:layout_editor_absoluteY="177dp" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
